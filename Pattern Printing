@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,i,j;
+    
+    do
+    {
+        printf("Enter number: ");
+        scanf("%d",&num);
+        
+        for(i=1;i<=num;i++)
+        {
+            for(j=num-i;j>0;j--)
+            {
+                printf(" ");
+            }
+            for(j=0;j<i;j++)
+            {
+                printf(" *");
+            }
+            printf("\n");
+        }
+        if(num<=0)
+        {
+            printf("Invalid Input! Try Again.\n") ;
+        }
+    }while(num<=0);
+    return 0;
+}
